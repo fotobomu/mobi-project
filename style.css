@@ -1,0 +1,276 @@
+/* === Setup ===*/
+
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* === Global CSS === */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.wrapper {
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+img {
+	max-width: 100%;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid #a09f9f;
+	margin-top: -20px;
+}
+
+/* === header styles === */
+
+header {
+	background-image: linear-gradient(rgba(47,79,79,0.1), rgba(112,128,144,0.5)),url(assets/breather-196130.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	height: 100vh;
+}
+
+h1 {
+	font-size: 3.75rem;
+	color: white;
+	font-weight: 400;
+	padding-top: 10vh;
+}
+
+h3 {
+	font-size: 1.75rem;
+	color: #1a1a1b;
+}
+
+h4 {
+	font-size: 1.18rem;
+	color: #a09f9f;
+	font-weight: 400;
+}
+
+.header-content {
+	max-width: 60%;
+}
+
+.header-bar {
+	padding-top: 10px;
+}
+
+/* === navigation styles === */
+
+.navigation a {
+	text-decoration: none;
+	color: white;
+	font-weight: 400;
+	font-size: 1rem;
+	padding: 25px 15px;
+	display: inline-block;
+}
+
+.navigation a:hover {
+	text-decoration: none;
+	background: #ed1e24;
+	color: white;
+	font-weight: 400;
+	font-size: 1rem;
+	display: block;
+}
+
+.navigation ul {
+	float: right;
+	list-style: none;
+}
+
+.navigation li {
+	float: left;
+	position: relative;
+}
+
+.sub-menu li {
+	float: none;
+}
+
+.sub-menu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	padding: 0;
+}
+
+.navigation li:hover .sub-menu {
+	display: block;
+}
+
+/* === Logo Style === */
+
+.logo {
+	float: left;
+}
+
+.logo-text {
+	font-size: 2rem;
+	color: #ed1e24;
+	font-weight: 700;
+}
+
+/* === ./end Logo Style === */
+
+/* === main content styles === */
+
+.content {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.content-href {
+	color: #ed1e24;
+	font-weight: 400;
+	text-decoration: none;
+	border-bottom: 3px solid #ed1e24;
+	padding: 2px;
+}
+
+.content-href:hover {
+	color: white;
+	font-weight: 400;
+	text-decoration: none;
+	background: #ed1e24;
+	padding: 2px;
+}
+
+section {
+	float: left;
+	min-height: 440px;
+	margin-bottom: 20px;
+	position: relative;
+	padding-top: 80px;
+}
+
+/*=== Feature 1 Styles === */
+
+.one-third,
+.one-third-img {
+	width: calc(33.3% - 20px);
+	margin-right: 10px;
+	margin-left: 10px;
+	text-align: right;
+}
+
+.one-third-right {
+	width: 50%;
+	text-align: right;
+	float: right;
+}
+
+.image-bottom img {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	max-height: 440px;
+}
+
+/* === ./end Feature 1 Styles === */
+
+/* === Feature 2 Styles === */
+
+.two-thirds-text {
+	background-color: #f2f2f2;
+	width: calc(66.6% - 20px);
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	text-align: right;
+	padding-right: 20px;
+}
+
+/* === ./end Feature 2 Styles === */
+
+/* === Feature 3 Styles === */
+.two-thirds-image {
+	width: calc(66.6% - 20px);
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.image-top {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.one-third-left {
+	background-color: #f2f2f2;
+	width: calc(33.3% - 20px);
+	margin-right: 10px;
+	margin-left: 10px;
+	padding: 80px 20px;
+}
+/* === ./end Feature 3 Styles*/
+
+/* === footer styles === */
+
+.footer-background {
+	background-color: #f2f2f2;
+	height: 100%;
+	overflow: hidden;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.footer-column {
+	float: left;
+	width: 22.7%
+}
+
+.footer-column ul {
+	list-style: none;
+	padding: 0;
+}
+
+.footer-column a {
+	text-decoration: none;
+	color: #1a1a1b;
+	font-size: 1rem;
+	line-height: 2rem;
+}
+
+.footer-column a:hover {
+	text-decoration: none;
+	border-bottom: 3px solid #ed1e24;
+	color: #1a1a1b;
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+.footer {
+	color: #939393;
+	font-weight: 300;
+}
+
+.footer-copyright {
+	color: #939393;
+	font-weight: 300;
+	font-size: .7rem;
+}
+
+.hr-footer {
+	clear: both;
+}
+
+
+
