@@ -45,15 +45,16 @@ header {
 }
 
 h1 {
-	font-size: 3.75rem;
+	font-size: 8vmin;
 	color: white;
 	font-weight: 400;
-	padding-top: 10vh;
+	padding-top: 18vmin;
 }
 
 h3 {
-	font-size: 1.75rem;
+	font-size: 2rem;
 	color: #1a1a1b;
+	font-weight: 400;
 }
 
 h4 {
@@ -63,7 +64,7 @@ h4 {
 }
 
 .header-content {
-	max-width: 60%;
+	max-width: 70%;
 }
 
 .header-bar {
@@ -79,6 +80,7 @@ h4 {
 	font-size: 1rem;
 	padding: 25px 15px;
 	display: inline-block;
+	text-shadow: 1px 1px 2px #1a1a1b;
 }
 
 .navigation a:hover {
@@ -127,8 +129,6 @@ h4 {
 	color: #ed1e24;
 	font-weight: 700;
 }
-
-/* === ./end Logo Style === */
 
 /* === main content styles === */
 
